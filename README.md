@@ -11,7 +11,7 @@ Sebuah *widget* disebut *stateful* jika memiliki sebuah *state*. Artinya, ia aka
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 
 1. `Scaffold`: Struktur *layout* sederhana dengan *material design*.
-2. `FloatingActionButton`: Tombol aksi melayang yang biasanya muncul di bawah (atau kanan bawah).
+2. `FloatingActionButton`: Tombol aksi yang biasanya muncul di bawah.
 3. `Text`: Tulisan atau teks.
 4. `AppBar`: Bar bertuliskan "Program Counter" yang berada di atas layar.
 5. `Center`: Untuk mengatur posisi *widget* yang ada ke tengah.

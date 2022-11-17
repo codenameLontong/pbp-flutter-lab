@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:counter_7/drawer.dart';
 
 void main() {
   runApp(const MyApp());
@@ -49,6 +50,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
+      ),
+      drawer: AppDrawer(
+        myBudgetList: [],
       ),
       body: Center(
         child: Column(

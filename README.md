@@ -82,9 +82,9 @@ Route1  -------------------------->  Route1
 
 ## Sebutkan jenis-jenis event yang ada pada Flutter.
 
-`onPressed` -> Event yang terjadi ketika user telah selesai menekan
-`onTap` -> Event yang terjadi ketika sesaat setelah klik
-`onChanged` -> Event yang terjadi ketika ada perubahan
+- `onPressed` -> Event yang terjadi ketika user telah selesai menekan
+- `onTap` -> Event yang terjadi ketika sesaat setelah klik
+- `onChanged` -> Event yang terjadi ketika ada perubahan
 
 ## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
 

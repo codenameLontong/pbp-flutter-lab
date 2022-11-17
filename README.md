@@ -41,3 +41,61 @@ Keduanya menandakan sebuah variabel yang konstan; tidak akan/dapat berubah. Beda
 - Mengubabah judul halaman.
   - Nama judul halaman terdefinisi di *widget* pada `MyApp`.
 - *Add*, *commit*, dan *push*.
+
+
+# Tugas 8: Flutter Form
+
+Jeremy Mervin - 2106654675
+
+## Jelaskan perbedaan Navigator.push dan Navigator.pushReplacement
+
+`Navigator.pushReplacement` akan me-replace laman yang sedang dibuka dengan dengan laman baru. Sedangkan `Navigator.push` akan menambahkan rute lain ke atas tumpukan screen (stack) yang sekarang.
+
+```
+                          RouteB
+RouteA  Navigator.push()  RouteA
+Route2  --------------->  Route2
+Route1                    Route1
+
+RouteA                               RouteB
+Route2  Navigator.pushReplacement()  Route2
+Route1  -------------------------->  Route1
+```
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+1. `Scaffold`: Struktur *layout* sederhana dengan *material design*. 
+2. `Text`: Tulisan atau teks.
+3. `AppBar`: Bar bertuliskan "Program Counter" yang berada di atas layar.
+4. `Center`: Untuk mengatur posisi *widget* yang ada ke tengah.
+5. `Padding`: Untuk membuat *inset*/*padding* pada sebuah widget.
+6. `Column`: Membuat *widget* muncul dalam satu kolom.
+7. `Row`: Membuat *widget* muncul dalam satu baris.
+8. `Form` : Membuat form.
+9. `Drawer` : Menu di sebelah kiri pada AppBar.
+10. `TextFormField` : Tempat untuk data input bagi user (input field).
+11. `ListTile` : Membuat inline widget yang berisi list.
+12. `Container` : Contaniner untuk memuat widget lain.
+13. `Expanded`: Untuk mengisi kekosongan space.
+14. `MaterialPageRoute` : Untuk memuat ulang dan me-render laman.
+15. `Spacer` : Membuat space pada flexible widget. 
+
+## Sebutkan jenis-jenis event yang ada pada Flutter.
+
+`onPressed` -> Event yang terjadi ketika user telah selesai menekan
+`onTap` -> Event yang terjadi ketika sesaat setelah klik
+`onChanged` -> Event yang terjadi ketika ada perubahan
+
+## Jelaskan bagaimana cara kerja Navigator dalam "mengganti" halaman dari aplikasi Flutter.
+
+Navigator mengatur route dalam sebuah stack yang menyimpan berbagai laman disertai dengan animasi transisi. Hampir serupa seperti yang digunakan untuk next sama dengan Stack.push(), sedangkan untuk kembali sama dengan Stack.pop();
+
+## Jelaskan bagaimana cara kamu mengimplementasikan _checklist_ di atas.
+
+- Membuat drawer app pada `drawer.dart` yang berisi widget `Drawer` dengan routing ke `main.dart`, `form.dart`, `list.dart`
+- Membuat budget model atau class pada `budget.dart`
+- Membuat List pada `form.dart`, dan akan diterima oleh builder
+- Membuat `list.dart` yang mengambil parameter dari budget model
+- Render semua dengan menggunakan itemBuiler
+- Styling sedikit dan merapihkan semua
+- *Add*, *commit*,*push*.

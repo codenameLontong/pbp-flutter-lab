@@ -98,4 +98,4 @@ Navigator mengatur route dalam sebuah stack yang menyimpan berbagai laman disert
 - Membuat `list.dart` yang mengambil parameter dari budget model
 - Render semua dengan menggunakan itemBuiler
 - Styling sedikit dan merapihkan semua
-- *Add*, *commit*,*push*.
+- `Add`, `commit`, `push`

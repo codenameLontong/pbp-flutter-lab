@@ -42,7 +42,6 @@ Keduanya menandakan sebuah variabel yang konstan; tidak akan/dapat berubah. Beda
   - Nama judul halaman terdefinisi di *widget* pada `MyApp`.
 - *Add*, *commit*, dan *push*.
 
-
 # Tugas 8: Flutter Form
 
 Jeremy Mervin - 2106654675
@@ -97,5 +96,41 @@ Navigator mengatur route dalam sebuah stack yang menyimpan berbagai laman disert
 - Membuat List pada `form.dart`, dan akan diterima oleh builder
 - Membuat `list.dart` yang mengambil parameter dari budget model
 - Render semua dengan menggunakan itemBuiler
+- Styling sedikit dan merapihkan semua
+- `Add`, `commit`, `push`
+
+# Tugas 9: Integrasi Web Service pada Flutter
+
+Jeremy Mervin - 2106654675
+
+## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
+
+Ya, bisa saja. Namun, cara tersebut sangat tidak disarankan. Hal ini disebabkan karena tipe data yang sudah dideklarasikan menjadi *useless* karena value json yang berupa *dynamic*, sehingga nantinya akan mudah terjadi error pada app yang telah dibuat. Oleh karena itu, sangat disarankan untuk menentukan mode terlebih dahulu agar data yang diambil memiliki struktur yang baik dan mudah digunakan.
+
+## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
+
+1. `ListTile`: Digunakan untuk menampilkan data dalam bentuk list. 
+2. `CircularProgressIndicator`: Menampilkan loading circle bar.
+3. `Card`: Menampilkan data dalam bentuk kartu.
+4. `FutureBuilder`: Digunakan untuk menampilkan data dari Future response API
+5. `Checkbox`: Membuat sebuah checkbox yang mempunyai event onChange yang tertrigger setiap kali ada perubahan value di checkbox.
+
+## Jelaskan mekanisme pengambilan data dari json hingga dapat ditampilkan pada Flutter.
+
+- Menambahkan dependensi `http`
+- Membuah model watchlist
+- Melakukan Fetch JSON dari API
+- Menyimpan JSON ke dalam model watchlist
+- Menampilkan data dari model watchlist dengan memanfaatkan `FutureBuilder`
+
+## Jelaskan bagaimana cara kamu mengimplementasikan _checklist_ di atas.
+
+- Menambahkan routing ke `watchlist.dart` pada app drawer
+- Menambahkan `*internet android permission*` pada `AndroidManifest.xml`.
+- Membuat model untuk object JSON
+- Membuat fungsi untuk *fetch* data 
+- Render dengan menggunakan `FutureBuilder`
+- Membuat `detail.dart` dan menambahkan attribut seperlunya
+- Menghubungkan `detail.dart` dan `watchlist.dart`
 - Styling sedikit dan merapihkan semua
 - `Add`, `commit`, `push`

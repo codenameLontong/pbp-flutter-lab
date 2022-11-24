@@ -105,7 +105,7 @@ Jeremy Mervin - 2106654675
 
 ## Apakah bisa kita melakukan pengambilan data JSON tanpa membuat model terlebih dahulu? Jika iya, apakah hal tersebut lebih baik daripada membuat model sebelum melakukan pengambilan data JSON?
 
-Ya, bisa saja. Namun, cara tersebut sangat tidak disarankan. Hal ini disebabkan karena tipe data yang sudah dideklarasikan menjadi *useless* karena value json yang berupa *dynamic*, sehingga nantinya akan mudah terjadi error pada app yang telah dibuat. Oleh karena itu, sangat disarankan untuk menentukan mode terlebih dahulu agar data yang diambil memiliki struktur yang baik dan mudah digunakan.
+Ya, bisa saja. Namun, cara tersebut sangat tidak disarankan. Hal ini disebabkan karena tipe data yang sudah dideklarasikan menjadi *useless* karena value json yang berupa *dynamic*, sehingga nantinya akan mudah terjadi error pada app yang telah dibuat. Oleh karena itu, sangat disarankan untuk menentukan model terlebih dahulu agar data yang diambil memiliki struktur yang baik dan mudah digunakan.
 
 ## Sebutkan widget apa saja yang kamu pakai di proyek kali ini dan jelaskan fungsinya.
 
